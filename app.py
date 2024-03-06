@@ -4,11 +4,15 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
+def divide(a, b):
+    return a / b
+
 def culculate():
     while True:
-        print("Enter 1, if You want to add two numbers")
-        print("Enter 2, if You want to substract two numbers")
-        print("Enter 3, if You want to quit")
+        print("Enter 1, if You want to add two numbers.")
+        print("Enter 2, if You want to substract two numbers.")
+        print("Enter 3, if You want to divide a number by another.")
+        print("Enter 4, if You want to quit")
 
         operation = input("Your choice is: ").strip()
         print("Great!")    
@@ -22,8 +26,13 @@ def culculate():
             num1 = int(input("Choose the first number:"))
             num2 = int(input("Choose the second number:"))
             print(f"Result of subtracting {num1} and {num2} is: {subtract(num1, num2)}")
-        
+
         elif operation == "3":
+            num1 = int(input("Choose the first number:"))
+            num2 = int(input("Choose the second number:"))
+            print(f"Result of dividing {num1} by {num2} is: {divide(num1, num2)}")
+        
+        elif operation == "4":
             print("Goodbye!")
             break
 
