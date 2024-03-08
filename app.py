@@ -51,7 +51,3 @@ def culculate():
 
 if __name__ == "__main__":
     culculate()
-
-
-        
-        
